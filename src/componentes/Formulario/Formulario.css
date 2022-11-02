@@ -1,0 +1,13 @@
+.formulario {
+    display: flex;
+    justify-content: center; /* Alinhamento orizontal no centro */
+    margin: 80px 0; /* Margem de 80px para cima e para paixo e zero para a direita e esquerda */
+}
+
+.formulario form{
+    max-width: 80%; /* Limitando a maior largura do formulário em 80% */
+    background-color: #F2F2F2;
+    border-radius: 20px; /* Incluindo o boleamento do campo */
+    padding: 36px 64px; /* Padding(Margin interna) de 36px para cima e para paixo e 64px para a direita e esquerda */
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08); /* box-shadow == Sompra da caixa. Estamos incluindo o sompreamento com opacidade de 0.08 */
+}

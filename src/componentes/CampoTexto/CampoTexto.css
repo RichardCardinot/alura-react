@@ -1,0 +1,21 @@
+.campo-texto { /* Estilizando a classe compo-texto contida no arquivo index.js desse pacote */
+    margin: 24px 0; /* Incluinido uma margem superior e inferior de 24px, e uma margem da direita e esquerda de 0 */
+}
+
+.campo-texto label { /* Estilizando o "label" contido dentro da classe "campo-texto" */
+    display: block; /* O "display: block" que a linha, desta forme o "Nome" fica na linha superior e o campo para digitar o nome, na linha de baixo */
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.campo-texto input { /* Estilizando o "input" contido dentro da classe "campo-texto" */
+    background-color: #FFF;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06); /* O box-shadow adiciona o sombreado do campo */
+    width: 100%; /* Determina que o campo "input" deve ocupar 100% da tela (Ou container que ele se encontra) */
+    border: none; /* Remove a borda */
+    font-size: 24px; /* Determina o tamanho da fonte */
+    padding: 24px; /* Determina o tamanho da margem interna */
+    box-sizing: border-box; /* Determina que o "width: 100%" é levando em consideração o todo, ou seja, o campo com o border, padding e qualquer 
+    outra estilização. Se não usar o "box-sizing: border-box", o campo pode ultrapassar o tamanho esperado. */
+
+}
