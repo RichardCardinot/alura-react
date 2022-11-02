@@ -1,0 +1,15 @@
+.botao {
+    background-color: #6278f7;
+    border-radius: 10px;
+    font-weight: 700; /* font-weight == peso da fonte. Informa a itensidade da fonte, que no caso é 700 (Bem forte) */
+    font-size: 18px;
+    padding: 32px;
+    border: none; /* Remove a borda do elemento */
+    cursor: pointer; /* Transforma o cursor do mouse em uma "mãozinha" quando a seta estiver sobre o elemento. */
+    color: #FFF; /* Cor da fonte */
+    margin: 32px 0; /* Margin de 16px para cima e para baixo e de 0 para a esquerda e para a direita */
+}
+
+.botao:hover { /* Cria a condição: Quando o cursor do mouse estiver sobre(houver) o elemento, aplique essas configurações. */
+    color: #94FFD4 /* Cor da fonte */
+}

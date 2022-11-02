@@ -1,10 +1,22 @@
 import './ListaSuspensa.css'
 
 const ListaSuspensa = (props) => {
+
     return (
-        <div>
-            <label>{props.label}</label> {/* Label == etiqueta. Aqui estamos incluindo um etiqueta ao campo para melhor a cessibilidade. */}
-            <select> {/* Tag que cria o menu de opção (Drop down == lista suspensa)*/}
+        <div className='lista-suspensa'>
+            
+            <label> {/* Label == etiqueta. Aqui estamos incluindo um etiqueta ao campo para melhor a cessibilidade. */}
+                {props.label}
+            </label> 
+
+            <select 
+                onChange={evento => props.aoAlterado(evento.target.value)}
+                required={props.required} /* Tag que cria o menu de opção (Drop down == lista suspensa).
+                                            O "required={props.required}" diz que esse campo é requerido(required / Obrigatório) 
+                                            quando no props vier o props.required */
+                value={props.valor}
+            > 
+
                 {props.itens.map(item => <option key={item}>{item}</option>)} 
                 {/* O .map pode ser usada em qualquer lista no JS. 
                     O .map mapeia uma lista e após uma ação, que é realizada pela Arrow Function, returma um nova lista traformada pela ação.
